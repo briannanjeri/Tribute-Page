@@ -1,0 +1,365 @@
+body {
+  max-width: 1400px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  color: #000000;
+}
+#hero {
+  background-image: url("hero_background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  width: 300px;
+  margin-right: 30px;
+}
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.vertical-line {
+  height: 100%;
+  width: 5px;
+  background-color: #000000;
+  margin: 0 20px;
+}
+
+#impact {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#callToAction:hover,
+#testimonials:hover,
+#impact:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+#admiredPersonAndAchievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px;
+}
+p i.shine {
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #3399ff;
+  }
+  50% {
+    color: #66ccff;
+  }
+  100% {
+    color: #3399ff;
+  }
+}
+.admiredPerson,
+.achievements {
+  flex: 1;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.admiredPerson:hover,
+.achievements:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.admiredPerson img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+li i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+li i:hover {
+  animation: sparkle 0.5s ease infinite;
+}
+
+.admiredPerson p:not(.show) {
+  display: none;
+}
+.achievements ul li:not(.show) {
+  display: none;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.toggle-btn.less {
+  background-color: #dc3545;
+}
+
+.toggle-btn.less:hover {
+  background-color: #c82333;
+}
+
+#callToAction {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+#testimonials {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonials {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.testimonialsAndConclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.test-column {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.testimonial p {
+  flex-basis: 45%;
+}
+
+.testimonial-author {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.cta-icon {
+  width: 50px;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.cta-icon i.glitter {
+  animation: glitter 2s infinite;
+}
+
+@keyframes glitter {
+  0% {
+    color: #ffcc00;
+  }
+  50% {
+    color: #ffff66;
+  }
+  100% {
+    color: #ffcc00;
+  }
+}
+
+.admiredPerson-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.admiredPerson-profile img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#conclusion {
+  width: 80%;
+  margin: auto;
+}
+i.heart {
+  color: red;
+}
+.footer-text {
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+/*--media-query--*/
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-right: 0;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-icon {
+    display: inline-block;
+  }
+
+  #callToAction,
+  #impact,
+  #admiredPersonAndAchievements,
+  .admiredPerson,
+  .achievements {
+    width: 87%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #callToAction {
+    width: 95%;
+  }
+  .cta-icon {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+}
